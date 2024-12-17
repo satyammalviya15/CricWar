@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="2"
+    tools:context=".Login"
+    android:weightSum="2"
+    android:orientation="vertical"
+    android:background="@color/red">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="100dp">
+       <LinearLayout
+           android:layout_marginTop="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="90dp"
+           android:weightSum="1"
+           android:orientation="horizontal">
+           <RelativeLayout
+               android:layout_width="50dp"
+               android:layout_height="match_parent"
+               android:gravity="right">
+       <ImageButton
+           android:contentDescription="backarrow"
+           android:id="@+id/imagebutton11"
+           android:scaleType="centerInside"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           app:srcCompat="@drawable/backarrow"
+           android:background="@color/tranx"
+           />
+           </RelativeLayout>
+           <RelativeLayout
+               android:layout_weight="1"
+               android:layout_width="0dp"
+               android:layout_height="match_parent">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical">
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="45dp"
+                       android:text="Login/Register"
+                       android:gravity="center"
+                       android:textColor="@color/white"
+                       android:textSize="25dp"
+                       android:textStyle="bold">
+                   </TextView>
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="45dp"
+                       android:gravity="center|top"
+                       android:text="Let's get you started"
+                       android:textColor="@color/lightwhite">
+                   </TextView>
+               </LinearLayout>
+           </RelativeLayout>
+           <RelativeLayout
+               android:layout_width="50dp"
+               android:layout_height="wrap_content">
+       <ImageButton
+           android:contentDescription="help"
+           android:id="@+id/imagebutton12"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:scaleType="centerInside"
+           android:background="@color/tranx"
+           app:srcCompat="@drawable/questionmark" />
+           </RelativeLayout>
+       </LinearLayout>
+
+   </RelativeLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginBottom="10dp"
+        android:background="@color/grey"
+        android:hint="Mobile number"
+        app:boxStrokeColor="@color/black"
+        app:endIconMode="clear_text"
+        app:hintTextColor="@color/black"
+        app:prefixText="+91"
+        app:prefixTextAppearance="@style/TextAppearance.AppCompat.Body1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textColorHighlight="#0B0A0A"
+            android:textColorLink="#0E0E0E" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="i certify that i am above 18 years" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="CONTINUE" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/agree" />
+
+</LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
